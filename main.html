@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EP Rewards - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="rgb(255, 51, 0)" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+<body class="svg1">
+    
+    <div class="container">
+        <div class="p05 b-orange bold shadow white">EP Rewards</div>
+
+
+        <div id="loader" class="container m05">
+            <div class="loader"></div>
+        </div>
+
+        <div id="userData" class="shadow b-white p05 m05 round border hide">
+            <table class="table1">
+                <tr>
+                    <td>Name</td>
+                    <td id="namePlace">Raghavendra K J</td>
+                </tr>
+                <tr>
+                    <td>Mobile</td>
+                    <td id="mobPlace">6363703772</td>
+                </tr>
+                <tr>
+                    <td>Balance</td>
+                    <td>₹ <span id="balPlace">20</span></td>
+                </tr>
+            </table>
+            <div class="flex jc-sb p05">
+                <div>₹ <span id="pbBal">20</span></div>
+                <div>₹ 100</div>
+            </div>
+            <div class="container p05">
+                <div id="progress">
+                    <div id="level"></div>
+                </div>
+            </div>
+            <div class="container p05 flex column ai-c">
+                <div id="withdraw" class="taskbtn b-lime p05 black  center">Withdraw Money</div>
+            </div>
+        </div>
+
+        <div class="container hide" id="tasker">
+            <div id="task1" class="m05 shadow round border b-white">
+                <div class="flex jc-sb p05 task">
+                    <div>Task 1</div>
+                    <div>₹ 40</div>
+                </div>
+                <table class="table1">
+                    <tr>
+                        <td>Reward</td>
+                        <td>₹ 40</td>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <td id="t1s"></td>
+                    </tr>
+                </table>
+                <div class="container p05 flex column ai-c">
+                    <a href="task1.html" class="taskbtn b-light p05 black  center">Complete Now</a>
+                </div>
+            </div>
+    <br>
+            <div id="task2" class="m05 shadow round  border b-white">
+                <div class="flex jc-sb p05 task">
+                    <div>Task 2</div>
+                    <div>₹ 40</div>
+                </div>
+                <table class="table1">
+                    <tr>
+                        <td>Reward</td>
+                        <td>₹ 40</td>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <td id="t2s"></td>
+                    </tr>
+                </table>
+                <div class="container p05 flex column ai-c">
+                    <a href="task2.html" class="taskbtn b-light p05 black  center">Complete Now</a>
+                </div>
+            </div>
+            <br>
+            <div id="task3" class="m05 shadow round  border b-white">
+                <div class="flex jc-sb p05 task">
+                    <div>Task 3</div>
+                    <div>₹ 20</div>
+                </div>
+                <table class="table1">
+                    <tr>
+                        <td>Reward</td>
+                        <td>₹ 20</td>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <td id="t3s"></td>
+                    </tr>
+                </table>
+                <div class="container p05 flex column ai-c">
+                    <a href="task3.html" class="taskbtn b-light p05 black  center">Complete Now</a>
+                </div>
+            </div>
+    
+        </div>
+        </div>
+
+
+
+    
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+    <script>
+const firebaseConfig = 
+{
+    apiKey: "AIzaSyBaXz1bJqYRM5dbx8DAzPHdUpCh9o4H-Es",
+    authDomain: "ep-rewards.firebaseapp.com",
+    databaseURL: "https://ep-rewards.firebaseio.com",
+    projectId: "ep-rewards",
+    storageBucket: "ep-rewards.appspot.com",
+    messagingSenderId: "470620405995",
+    appId: "1:470620405995:web:e3221eeb20afbdc3913eae",
+    measurementId: "G-3L14XN6ZR3"
+};
+firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="main.js"></script>
+</body>
+</html>

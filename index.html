@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EP Rewards</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#FFF" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+<body class="svg1">
+    
+    <div class="container p05">
+        <div class="jumb">Install</div>
+        <div class="jumb">Apps</div>
+        <div class="jumb">Earn</div>
+        <div class="jumb">Money</div>
+    </div>
+
+    <div class="flex column m1 ai-c white m1">
+        <div onclick="signup()" class="btn p1 b-green jumb-btn center">
+            Create Account
+        </div>
+        <div onclick="login()" class="btn p1 m1 b-blue jumb-btn center">
+            Login
+        </div>
+    </div>
+
+<script>
+function getCookie(cname) 
+{
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+}
+var mobile=(getCookie("mobile"));
+if(mobile.length==10)
+{
+    location.href="main.html";
+}
+
+function signup()
+{
+    location.href="signup.html";
+}
+function login()
+{
+    location.href="login.html";
+}
+</script>
+</body>
+</html>

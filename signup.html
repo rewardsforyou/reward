@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EP Rewards - Create Account</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#FFF" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+<body class="svg1">
+    
+    <div class="container jumb-s p1">Create Account</div>
+
+    <div class="form">
+        <input type="text" class="input" placeholder="Full Name" id="fullName">
+        <input type="tel" class="input" placeholder="10 Digit Mobile Number" id="mobileNo">
+        <input type="tel" class="input" placeholder="Refer Code (optioal)" id="refererNo">
+    </div>
+   
+    <div id="loader" class="loader"></div>
+
+    <div class="flex column m1 ai-c white m1">
+        <div id="createAccount" class="btn p1 b-green jumb-btn center">
+            Create Account
+        </div>
+    </div>
+    
+    <div class="m05 p05">Already have an account? <a href="login.html">Login Here</a></div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+    <script>
+const firebaseConfig = 
+{
+    apiKey: "AIzaSyBaXz1bJqYRM5dbx8DAzPHdUpCh9o4H-Es",
+    authDomain: "ep-rewards.firebaseapp.com",
+    databaseURL: "https://ep-rewards.firebaseio.com",
+    projectId: "ep-rewards",
+    storageBucket: "ep-rewards.appspot.com",
+    messagingSenderId: "470620405995",
+    appId: "1:470620405995:web:e3221eeb20afbdc3913eae",
+    measurementId: "G-3L14XN6ZR3"
+};
+firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="signup.js"></script>
+</body>
+</html>
